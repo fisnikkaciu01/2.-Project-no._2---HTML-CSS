@@ -10,6 +10,7 @@
     --horizontal-line-color-1: #a2fde9;
     --horizontal-line-color-2: #83defe;
     --banner-color: #d0f8fa;
+    --hl-grid-color: #f5f5f9;
 }
 
 .container {
@@ -337,13 +338,14 @@ main .latest-news {
     margin-top: 70px;
 }
 
-.good-to-know span {
+.gtk-title {
     font-family: var(--font-nav);
     font-size: 22px;
     color: var(--black);
     letter-spacing: -0.6px;
     font-weight: 600;
     line-height: 22px;
+    margin-bottom: 20px;
 }
 
 .cocoa-news {
@@ -352,39 +354,88 @@ main .latest-news {
     grid-gap: 10px;
 }
 
-.cocoa-farmers {
+.cocoa-farmers img {
     width: 403px;
     border-radius: 0.375rem;
 }
 
-.cocoa-farmers img {
-    
+.cocoa-farmers h2 {
+    font-family: var(--font);
+    font-size: 40px;
+    line-height: 48.4px;
+    letter-spacing: -0.62px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 10px 0px 0px 0px;
+    text-align: center;
 }
 
-.nl-1 {
-    width: 450px;
+.cocoa-farmers p {
+    font-family: var(--font);
+    font-size: 20px;
+    line-height: 27.6px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+.cocoa-farmers quote {
+    font-family: var(--font-nav);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 550;
+    color: var(--black);
+    margin-left: 115px;
+}
+
+.news-list {
+    width: 400px;
+    margin-right: 32px;
+}
+
+.nl-1, .nl-2, .nl-3, .nl-4 {
     display: flex;
     flex-direction: row;
+    margin: 0px 20px 20px 10px;
 }
 
-.nl-1-media, .nl-2-media, .nl-3-media, .nl-4-media {
+.nl-1-media, .nl-2-media, .nl-3-media, .nl-4-media, img {
     display: block;
     float: left;
     clear: left;
+    border-radius: 0.375rem;
+    margin-right: 10px;
 }
 
-.nl-1-content, .nl-2-content, .nl-3-content, .nl-4-content {
+.nl-1-content, .nl-2-content, .nl-3-content, .nl-4-content, p {
     display: inline-block;
-    float: left;
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.nl-1-content, .nl-2-content, .nl-3-content, .nl-4-content, quote {
+    font-family: var(--font-nav);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--gray);
 }
 
 .sign-up {
     background-color: #a2fde9;
     border-radius: 0.5rem 0.5rem 0.5rem 0;
+    width: 350px;
 }
 
 .sign-up img {
-    margin: 25px 0px 0px 125px;
+    margin: 25px 0px 0px 135px;
 }
 
 .sign-up h2 {
@@ -394,7 +445,9 @@ main .latest-news {
     line-height: 38.08px;
     letter-spacing: -0.8px;
     color:#393845;
-    margin: 15px 0px;
+    margin-top: 110px;
+    margin-bottom: 5px;
+    padding-left: 16px;
     text-align: center;
 }
 
@@ -413,13 +466,14 @@ main .latest-news {
     list-style-type: none;
     display: flex;
     justify-self: center;
-    margin-left: 55px;
+    margin-left: 70px;
 }
 
 .sign-up ul li a {
     text-decoration: none;
     padding: 10px;
     align-self: center;
+    color: var(--black);
 }
 
 .sign-up form {
@@ -434,14 +488,65 @@ main .latest-news {
     letter-spacing: normal;
     color:#393845;
     text-align: center;
-    padding: 0 30px;
+    margin-left: 120px;
 }
 
 .grid-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 274px);
+    grid-gap: 40px;
     margin: 70px 0px;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, h3 {
+    font-family: var(--font-nav);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: var(--black);
+}
+
+.hl-grid {
+    width: 274px;
+    height: 5px;
+    background-color: var(--hl-grid-color);
+    margin-bottom: 7px;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, p {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.45px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 13px 0px;
+}
+
+.logo-footer {
+    display: grid;
+    grid-template-columns: 310px 890px;
+    grid-gap: 10px;
+}
+
+.logo-f h2 {
+    font-family: var(--font-logo);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 54px;
+    color: var(--black);
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.moto-f h4 {
+    align-self: center;
+    margin-top: 20px;
+    font-family: var(--font);
+    color: var(--black);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
 }
 
 .form-footer {
@@ -449,20 +554,3 @@ main .latest-news {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
-
-.logo-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.logo-f {
-
-}
-
-.moto-f {
-
-}
-
-
-
