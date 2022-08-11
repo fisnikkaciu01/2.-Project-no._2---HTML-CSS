@@ -275,13 +275,13 @@ main .latest-news {
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px;
+    grid-gap: 25px;
 }
 
 .articles .sustainable-eating img,
 .articles .outdoors img,
 .articles .tips-techniques img {
-    width: 375px;
+    width: 373.5px;
     border-radius: 0.375rem;
 }
 
@@ -390,7 +390,7 @@ main .latest-news {
 }
 
 .news-list {
-    width: 400px;
+    width: 385px;
     margin-right: 32px;
 }
 
@@ -462,39 +462,80 @@ main .latest-news {
     padding: 0px 23px 20px 23px;
 }
 
+.sign-up form {
+    margin-left: 25px;
+}
+
+.sign-up-input {
+    width: 280px;
+    height: 45px;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 0.375rem;
+    font-family: var(--font);
+    font-size: 17px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.sign-up-button {
+    width: 100px;
+    height: 45px;
+    border-width: 2px;
+    border-radius: 0.1875rem;
+    border-color: #a2fde9;
+    background-color: #a2fde9;
+    color: var(--black);
+    margin-left: 98px;
+    margin-top: 20px;
+    font-family: var(--font-nav);
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .sign-up ul {
     list-style-type: none;
     display: flex;
     justify-self: center;
     margin-left: 70px;
+    margin-bottom: 40px;
 }
 
 .sign-up ul li a {
+    display: block;
     text-decoration: none;
-    padding: 10px;
     align-self: center;
     color: var(--black);
-}
-
-.sign-up form {
-    margin: 0px 0px 15px 75px;
+    padding-left: 6px;
+    padding-top: 4px;
 }
 
 #unsubscribe {
     font-family: Grad,Times,"Times New Roman",Georgia,serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 19.5px;
     letter-spacing: normal;
     color:#393845;
     text-align: center;
     margin-left: 120px;
+    margin-bottom: 0px;
+}
+
+.facebook-box-round, .twitter-box-round, .instagram-box-round, .pinterest-box-round {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: white;
 }
 
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(4, 274px);
-    grid-gap: 40px;
+    grid-gap: 34px;
     margin: 70px 0px;
 }
 
