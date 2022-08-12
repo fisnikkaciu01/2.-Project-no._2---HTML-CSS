@@ -43,12 +43,20 @@ header {
     padding: 0;
 }
 
-.logo h2 {
+.logo a h2 {
     font-family: var(--font-logo);
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
     color: var(--black);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h2:hover {
+    text-shadow: -2px 1px var(--background-color-icon);
 }
 
 .moto {
@@ -71,6 +79,11 @@ header {
     padding: 15px;
     align-self: center;
     color: var(--black);
+}
+
+.social-media ul li a:hover,
+.social-media ul li span:hover {
+    color: var(--background-color-icon);
 }
 
 .social-media span {
@@ -97,6 +110,10 @@ nav a {
     text-decoration: none;
     color: var(--black);
     padding: 0 24px 0 0;
+}
+
+nav a:hover {
+    color: var(--green);
 }
 
 .search-icon ul {
@@ -154,6 +171,10 @@ main .today-news {
     text-align: center;
 }
 
+.today-news h1:hover {
+    color: var(--green);
+}
+
 .today-news p {
     font-family: var(--font);
     font-size: 20px;
@@ -188,6 +209,10 @@ main .latest-news {
     border-radius: 0 0.5rem 0.5rem;
 }
 
+.box-1:hover {
+    background-color: var(--background-color-icon);
+}
+
 .box-1 h2 {
     font-size: 18px;
     font-family: var(--font-nav);
@@ -206,6 +231,10 @@ main .latest-news {
     letter-spacing: normal;
     color: var(--black);
     margin: 24px 0px 5px 0px; 
+}
+
+.latest-news p:hover {
+    color: var(--green);
 }
 
 .latest-news quote {
@@ -245,8 +274,12 @@ main .latest-news {
     color: var(--black);
 }
 
+.banner a h3:hover {
+    color: var(--green);
+}
+
 .banner .vertical-line {
-    width: 1.5px;
+    width: 2px;
     height: 63px;
     background-color: var(--horizontal-line-color-2);
     margin-top: 23px;
@@ -307,6 +340,12 @@ main .latest-news {
     margin-top: 10px;
     margin-bottom: 0px;
     color: var(--black);
+}
+
+.articles .sustainable-eating h1:hover,
+.articles .outdoors h1:hover,
+.articles .tips-techniques h1:hover {
+    color: var(--green);
 }
 
 .articles .sustainable-eating p,
@@ -370,6 +409,10 @@ main .latest-news {
     text-align: center;
 }
 
+.cocoa-farmers h2:hover {
+    color: var(--green);
+}
+
 .cocoa-farmers p {
     font-family: var(--font);
     font-size: 20px;
@@ -418,6 +461,10 @@ main .latest-news {
     color: var(--black);
     margin-top: 0px;
     margin-bottom: 10px;
+}
+
+.nl-1-content p:hover, .nl-2-content p:hover, .nl-3-content p:hover, .nl-4-content p:hover {
+    color: var(--green);
 }
 
 .nl-1-content, .nl-2-content, .nl-3-content, .nl-4-content, quote {
@@ -493,11 +540,15 @@ main .latest-news {
     font-size: 14px;
 }
 
+.sign-up-button span:hover {
+    color: white;
+}
+
 .sign-up ul {
     list-style-type: none;
     display: flex;
     justify-self: center;
-    margin-left: 70px;
+    margin-left: 60px;
     margin-bottom: 40px;
 }
 
@@ -506,8 +557,8 @@ main .latest-news {
     text-decoration: none;
     align-self: center;
     color: var(--black);
-    padding-left: 6px;
-    padding-top: 4px;
+    padding-left: 8.5px;
+    padding-top: 6.5px;
 }
 
 #unsubscribe {
@@ -523,13 +574,17 @@ main .latest-news {
 }
 
 .facebook-box-round, .twitter-box-round, .instagram-box-round, .pinterest-box-round {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: white;
     border-radius: 50%;
     margin-right: 5px;
     border-style: solid;
-    border-color: white;
+    border-color: var(--horizontal-line-color-1);
+}
+
+.facebook-box-round:hover, .twitter-box-round:hover, .instagram-box-round:hover, .pinterest-box-round:hover  {
+    background-color: var(--background-color-icon);
 }
 
 .grid-cards {
@@ -545,6 +600,11 @@ main .latest-news {
     font-weight: 700;
     letter-spacing: -0.6px;
     color: var(--black);
+}
+
+.card-1 h3:hover, .card-2 h3:hover, .card-3 h3:hover, .card-4 h3:hover, 
+.card-5 h3:hover, .card-6 h3:hover, .card-7 h3:hover, .card-8 h3:hover {
+    color: var(--green);
 }
 
 .hl-grid {
@@ -570,7 +630,7 @@ main .latest-news {
     grid-gap: 10px;
 }
 
-.logo-f h2 {
+.logo-f a h2 {
     font-family: var(--font-logo);
     font-size: 50px;
     font-weight: 400;
@@ -579,6 +639,14 @@ main .latest-news {
     margin-top: 0px;
     margin-left: 30px;
     margin-bottom: 10px;
+}
+
+.logo-f a {
+    text-decoration: none;
+}
+
+.logo-f a h2:hover {
+    text-shadow: -2px 1px var(--background-color-icon);
 }
 
 .moto-f h4 {
@@ -631,6 +699,10 @@ main .latest-news {
     font-size: 14px;
 }
 
+.button-box-f:hover {
+    background-color: var(--horizontal-line-color-2);
+}
+
 .subscribe h2 {
     font-family: var(--font-nav);
     font-size: 25px;
@@ -658,6 +730,10 @@ main .latest-news {
     border-width: 2px;
 }
 
+.twitter-icon-box:hover, .facebook-icon-box:hover, .instagram-icon-box:hover, .pinterest-icon-box:hover {
+    background-color: var(--horizontal-line-color-2);
+}
+
 .subscribe ul li a {
     display: block;
     color: var(--black);
@@ -676,6 +752,10 @@ main .latest-news {
 
 .card-items ul li a h3 {
     padding-bottom: 10px;
+}
+
+.card-items ul li a h3:hover {
+    color: var(--green);
 }
 
 .menu-1 ul {
@@ -713,3 +793,7 @@ main .latest-news {
     font-weight: 400;
     line-height: 22px;
 }
+
+.menu-1 ul li a:hover, .menu-2 ul li a:hover {
+    color: var(--green);
+}  
