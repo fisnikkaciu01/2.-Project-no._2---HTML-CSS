@@ -528,9 +528,7 @@ main .latest-news {
 .sign-up-button {
     width: 100px;
     height: 45px;
-    border-width: 2px;
-    border-radius: 0.1875rem;
-    border-color: #a2fde9;
+    border: none;
     background-color: #a2fde9;
     color: var(--black);
     margin-left: 98px;
